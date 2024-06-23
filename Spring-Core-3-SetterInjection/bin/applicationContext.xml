@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+ 	<bean id="address" class="com.pace.springcore.setterinjection.beans.Address">
+ 		<property name="flatno" value="1001"></property>
+ 		<property name="appartmentName" value="Star Castle" />
+ 		<property name="area" value="Wakad"></property>
+ 		<property name="city" value="Pune"></property>   
+   </bean>
+   
+   <bean id="emp" class="com.pace.springcore.setterinjection.beans.Employee">
+      <property name="id" value="1020"/>
+      <property name="name" value="Nesha"/>
+      <property name="address" ref="address"/>
+   </bean>
+
+
+
+</beans>

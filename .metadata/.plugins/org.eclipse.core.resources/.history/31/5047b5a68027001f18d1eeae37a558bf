@@ -1,0 +1,32 @@
+package com.pace.springcore.constructorsetterinjection;
+public class Citizen {
+	State name;
+	double aadharNo;
+	byte age;
+	
+	public Citizen(State name, double aadharNo, byte age) {
+		super();
+		this.name = name;
+		this.aadharNo = aadharNo;
+		this.age = age;
+	}
+
+	public State getName() {
+		return name;
+	}
+
+	public double getAadharNo() {
+		return aadharNo;
+	}
+
+	public byte getAge() {
+		return age;
+	}
+	
+	public void showCitizenDetails() {
+		System.out.println("Citizen Name: " + name);
+		System.out.println("Citizen AadharNum:" + aadharNo);
+		System.out.println("Citizen Age: + age");
+	}
+	
+}

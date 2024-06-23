@@ -1,0 +1,47 @@
+package com.pace.springcore.constructorsetterinjection;
+
+import org.springframework.stereotype.Component;
+
+public class State {
+	String name;
+	String capital;
+	float population;
+	
+	public State(String name, String captial, float population) {
+		super();
+		this.name = name;
+		this.capital = capital;
+		this.population = population;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getCapital() {
+		return capital;
+	}
+
+	public void setCaptial(String captial) {
+		this.capital = capital;
+	}
+
+	public float getPopulation() {
+		return population;
+	}
+
+	public void setPopulation(float population) {
+		this.population = population;
+	}
+	
+	public void showStateDetails() {
+		System.out.println("State Name: " + name);
+		System.out.println("State Capital: " + capital);
+		System.out.println("State Population: "+ population);
+	}
+
+}

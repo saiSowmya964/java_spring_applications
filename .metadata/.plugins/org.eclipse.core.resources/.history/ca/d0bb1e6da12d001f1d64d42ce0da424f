@@ -1,0 +1,19 @@
+package com.pace.springboot;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration;
+import org.springframework.context.annotation.ComponentScan;
+
+@SpringBootApplication
+@EnableAutoConfiguration(exclude = { ErrorMvcAutoConfiguration.class })
+@ComponentScan(basePackages = { "com.pace.springboot.retail.controller" })
+public class SpringbootRestapiMysqlJpaApplication1Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringbootRestapiMysqlJpaApplication1Application.class, args);
+		System.out.println("SpringBoot DataJPA Server Started..");
+	}
+
+}
